@@ -1,0 +1,202 @@
+@charset "UTF-8";
+.margin-bottom {
+  margin-bottom: 3rem; }
+
+.margin-top {
+  margin-top: 3rem; }
+
+/*
+0 - 600px : Phone
+600 - 900px : Tablet portrait
+900 - 1200px : Tablet landscape
+1200 - 1800px : where our normal styles apply
+1800px + : Big desktop
+$breakpoint argument choices:
+- phone
+- tab-port
+- tab-land
+- big-desktop
+*/
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit; }
+
+html {
+  box-sizing: border-box;
+  font-size: 60%; }
+  @media only screen and (max-width: 640px) {
+    html {
+      width: 100%; } }
+
+body {
+  line-height: 1.5;
+  letter-spacing: -0.07rem;
+  color: #2a2a2a;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column; }
+
+  @media only screen and (max-width: 640px) {
+    body {
+      width: 100%;
+      overflow-x: hidden; } }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  font-weight:normal;}
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+li,
+ul {
+  list-style: none; }
+
+input[type="radio"] {
+  display: none; }
+
+button {
+  background: none;
+  border: 0; }
+
+button:focus {
+  outline: 0; }
+
+/* Reset Select */
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  outline: 0;
+  box-shadow: none; }
+
+.main {
+  flex: 1 0 auto; }
+
+/*
+.title {
+  font-size: 5rem;
+  font-weight: 800;
+  line-height: 3.7rem; }
+  @media only screen and (max-width: 640px) {
+    .title {
+      font-size: 2rem;
+      line-height: 2.5rem; } }
+*/
+.minititle {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1150b7; }
+  @media only screen and (max-width: 640px) {
+    .minititle {
+      font-size: 1.5rem;
+      padding: 0; } }
+
+.bntext {
+  font-size: 1.6rem;
+  font-weight: 400; }
+  @media only screen and (max-width: 640px) {
+    .bntext {
+      font-size: 1.2rem; } }
+
+.paragraph {
+  font-size: 1.6rem;
+  font-weight: 400;
+  margin-top: 1rem;
+  color: #303d51; }
+  @media only screen and (max-width: 640px) {
+    .paragraph {
+      font-size: 1.3rem;
+      margin-bottom: 1rem;
+      margin-top: 1rem; } }
+
+.explain {
+  font-size: 1.4rem; }
+
+.footer {
+  height: 300px;
+  width: 100%;
+  flex: none;
+  padding: 5rem 0rem;
+  background-color: #555;
+  font-family: sans-serif;
+  color: #fff;
+  font-size: 1.5rem;
+  letter-spacing: 0rem;
+  line-height: 2rem;
+  z-index: 900;
+ }
+  @media only screen and (max-width: 75em) {
+    .footer {
+      padding: 3rem 0rem; } }
+  @media only screen and (max-width: 640px) {
+    .footer {
+      padding: 4rem 2rem;
+      min-width: 0;
+      height: 500px;
+      font-size: 1.2rem;
+      line-height: 1.9rem; } }
+  .footer__box {
+    width: 114rem;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start; }
+    @media only screen and (max-width: 75em) {
+      .footer__box {
+        width: 72rem; } }
+    @media only screen and (max-width: 640px) {
+      .footer__box {
+        width: 100%;
+        flex-wrap: wrap-reverse; } }
+  .footer__logo {
+    margin: 0rem 4rem 0rem 0rem; }
+    @media only screen and (max-width: 640px) {
+      .footer__logo {
+        margin: 0; } }
+    @media only screen and (max-width: 75em) {
+      .footer__logo {
+        margin: 0rem 2rem 0rem 0rem; } }
+  .footer__social > ul li {
+    display: inline-block; }
+  @media only screen and (max-width: 640px) {
+    .footer__social {
+      margin-bottom: 2rem; } }
+  .footer__text {
+    font-size: 1.2rem;
+    font-weight: 300; }
+  .footer__info {
+    width: 60%;
+    margin-bottom: 2rem;
+    margin-right: 3rem; }
+    @media only screen and (max-width: 640px) {
+      .footer__info {
+        width: 100%;
+        margin-bottom: 1rem; } }
+    @media only screen and (max-width: 75em) {
+      .footer__info {
+        width: 80%;
+        margin-right: 3rem; } }
+    .footer__info__margin {
+      margin-bottom: 2rem; }
+      .footer__info__margin > ul li {
+        display: inline-block; }
+      @media only screen and (max-width: 640px) {
+        .footer__info__margin {
+          margin-bottom: 1rem; }
+          .footer__info__margin > ul li {
+            display: block; } }
