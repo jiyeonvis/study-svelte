@@ -5,12 +5,12 @@ import sveltePreprocess from 'svelte-preprocess';
 const config = {
 	plugins: [
 		sveltekit({
-            preprocess: sveltePreprocess({
+			preprocess: sveltePreprocess({
 				scss: {
 					prependData: '@import "./src/base.scss";'
 				}
 			}) // preprocess 등록
-        })//,
+		}) //,
 		//sveltekit()
 	]
 };

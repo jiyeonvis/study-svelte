@@ -9,6 +9,6 @@
 		"skipLibCheck": true,
 		"sourceMap": true,
 		"strict": true,
-		"noImplicitAny": false //에러 뜨길래 추가함 
+		"noImplicitAny": false //에러 뜨길래 추가함
 	}
 }
