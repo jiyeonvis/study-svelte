@@ -51,21 +51,21 @@
 		}
 	}
 
-	const GSheetsReader = require('g-sheets-api');
+// 	const GSheetsReader = require('g-sheets-api');
 
-  const options = {
-    apiKey : 'AIzaSyAaPrPRzbpnirGdoaItNU6H2C283bn2M90',
-    sheetId : '1jeFLjaehogonufKqNcNvR0gZVmuam1vrDIBNkY8Uba4'
-  }
+//   const options = {
+//     apiKey : 'AIzaSyAaPrPRzbpnirGdoaItNU6H2C283bn2M90',
+//     sheetId : '1jeFLjaehogonufKqNcNvR0gZVmuam1vrDIBNkY8Uba4'
+//   }
 
-let results; 
-  GSheetsReader(
-    options, 
-    results => {
-      console.log(results);
-    }
-  )
-  console.log("a");
+// let results; 
+//   GSheetsReader(
+//     options, 
+//     results => {
+//       console.log(results);
+//     }
+//   )
+//   console.log("a");
 </script>
 
 <header class="header">

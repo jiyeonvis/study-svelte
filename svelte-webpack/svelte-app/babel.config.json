@@ -1,0 +1,20 @@
+{
+    "presets": [
+        [
+            "@babel/preset-env",
+            {
+                "useBuiltIns": "usage", //폴리필 사용 방식 지정
+                "corejs": 3, //폴리필 버전 지정
+                "targets": {
+                    "browsers": [
+                        "> 0.5%",
+                        "last 2 major versions",
+                        "safari >= 9",
+                        "ie >= 11",
+                        "not dead"
+                        ]
+                    }
+            }
+        ] 
+    ]
+}
